@@ -6,7 +6,7 @@ try {
     $stmt->execute();
     $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
 } catch (PDOException $e) {
-    die("Database error: " . $e->getMessage());
+    die("Database error:! " . $e->getMessage());
 }
 ?>
 <!DOCTYPE html>
